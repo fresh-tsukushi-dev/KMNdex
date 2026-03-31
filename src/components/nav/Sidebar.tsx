@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { IconType } from "react-icons";
-import { FiHome, FiSettings, FiShield } from "react-icons/fi";
+import { FiFileText, FiHome, FiSettings, FiShield } from "react-icons/fi";
 import { useClient } from "../../modules/client";
 import {
   useMyPlaylists,
@@ -49,6 +49,7 @@ export function SidebarContent({
     () => [
       { name: t("Settings"), icon: FiSettings, path: "/settings" },
       { name: t("Privacy Policy"), icon: FiShield, path: "/privacy" },
+      { name: t("Terms of Service"), icon: FiFileText, path: "/terms" },
     ],
     [t],
   );

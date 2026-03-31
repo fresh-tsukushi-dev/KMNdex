@@ -26,6 +26,7 @@ const Playlist = React.lazy(() => import("./pages/Playlist"));
 const Settings = React.lazy(() => import("./pages/Settings"));
 const Search = React.lazy(() => import("./pages/Search"));
 const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = React.lazy(() => import("./pages/TermsOfService"));
 
 const RedirectToOrg = () => {
   const org = useStoreState((store) => store.org.currentOrg);
@@ -130,6 +131,10 @@ const routes: RouteObject[] = RK_SINGLE_CHANNEL_MODE
       {
         path: "/privacy",
         element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms",
+        element: <TermsOfService />,
       },
       {
         path: "/queue",
@@ -240,6 +245,10 @@ const routes: RouteObject[] = RK_SINGLE_CHANNEL_MODE
       {
         path: "/privacy",
         element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms",
+        element: <TermsOfService />,
       },
       {
         path: "/queue",

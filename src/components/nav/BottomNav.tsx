@@ -7,7 +7,7 @@ import { Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { IconType } from "react-icons";
-import { FiHome, FiSettings, FiShield } from "react-icons/fi";
+import { FiFileText, FiHome, FiSettings, FiShield } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { useOrgPath } from "./OrgSelector";
 import { LinkItemProps } from "./Sidebar";
@@ -22,6 +22,7 @@ export function BottomNav() {
       { name: t("Home"), icon: FiHome, path: orgPath },
       { name: t("Settings"), icon: FiSettings, path: "/settings" },
       { name: t("Privacy Policy"), icon: FiShield, path: "/privacy" },
+      { name: t("Terms of Service"), icon: FiFileText, path: "/terms" },
     ],
     [t, orgPath],
   );
