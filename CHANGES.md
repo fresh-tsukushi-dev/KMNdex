@@ -48,14 +48,15 @@ Forked on: 2026-02-16
      src/components/song/SongCard.tsx)
    - Added channel photo fallback for missing Holodex statics images
      (src/components/channel/ChannelPhoto.tsx)
-   - Changed BottomNav items (Settings, Privacy Policy)
+   - Changed BottomNav items (Settings, Privacy Policy, Terms of Service)
 
 6. Authentication and tracking removal
    - Removed OAuth integration (Google, Discord, Twitter)
    - Removed GA4 analytics and song play tracking
 
-7. Privacy
+7. Privacy and legal
    - Added Privacy Policy page (src/pages/PrivacyPolicy.tsx)
+   - Added Terms of Service page (src/pages/TermsOfService.tsx)
 
 8. Production API routing
    - Added axios interceptors for custom backend routing
@@ -65,6 +66,7 @@ Forked on: 2026-02-16
    - RKChannels: multi-channel landing page
      (src/pages/RKChannels.tsx)
    - Privacy Policy page (src/pages/PrivacyPolicy.tsx)
+   - Terms of Service page (src/pages/TermsOfService.tsx)
 
 10. Bug fixes and type safety
     - Resolved Chakra UI VStack/polymorphic type explosion
